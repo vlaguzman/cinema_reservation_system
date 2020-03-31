@@ -1,0 +1,4 @@
+%section
+  %h1 Listado de peliculas registradas
+  = react_component('ListMovies', { movies: @movies, url: movie_path }, prerender: true)
+

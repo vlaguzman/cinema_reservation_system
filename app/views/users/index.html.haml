@@ -1,0 +1,4 @@
+%section
+  %h1 Listado de usuarios registradas
+  = react_component('ListUsers', { users: @users, url: user_path }, prerender: true)
+

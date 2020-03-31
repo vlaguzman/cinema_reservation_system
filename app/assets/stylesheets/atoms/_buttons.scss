@@ -1,0 +1,16 @@
+/* BUTTON */
+
+button, input[type="submit"] {
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+}
+
+.button-create {
+  background-color: #62E835;
+}
+
+.button-delete {
+  background-color: #FA3F24;
+}
