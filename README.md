@@ -1,4 +1,18 @@
 # cinema_reservation_system
+
+El siguiente proyecto se crea en función de prueba técnica. Es un monolito y su desarrollo no esta completo, sin embargo se alcanzan a crear algunos modelos y funcionalidades básicas de la aplicación.
+
+Estado actual:
+- Gestión completa de usuarios y películas.(Listado, creación y eliminación)
+- Presentación de películas. 
+
+Los pasos a seguir son:
+- Mover la creación de películas a un modal. 
+- Habilitar la creación de reservas.
+- Validar reglas de negocio. 
+- Presentación de reservas.
+
+# indicaciones de instalación
 La aplicación usa Docker por tanto para iniciar aplicación es necesario seguir los siguientes pasos:
 
 1. Clonar el repositorio del proyecto:
@@ -24,6 +38,14 @@ exit of bash mode
 
 6. Ponemos a correr la aplicación
 `sudo docker-compose up`
+
+#Uso del sistema
+
+1. Una vez se corra la aplicación, desde la parte inferior o la sección de películas se pueden agregar nuevas películas. 
+Para las imagenes usar la URL completa, ejemplo:
+`https://images-na.ssl-images-amazon.com/images/I/71JTxfJpEpL._AC_UL320_SR214,320_.jpg`
+
+2. Para crear usuarios, por ahora se debe ir a la sección de usuarios.
 
 #Arquitectura del proyecto
 estilos: app/assets/stylesheets/*
