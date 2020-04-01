@@ -2,7 +2,7 @@
 La aplicación usa Docker por tanto para iniciar aplicación es necesario seguir los siguientes pasos:
 
 1. Clonar el repositorio del proyecto:
-`git clone git@github.com:vlaguzman/cinema_reservation.git`
+`git clone git@github.com:vlaguzman/cinema_reservation_system.git`
 
 2. Istalar Docker:
 ```
