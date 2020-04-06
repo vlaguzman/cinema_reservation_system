@@ -5,7 +5,7 @@ import $                   from 'jquery'
 import Dialog              from '@material-ui/core/Dialog'
 
 
-const Boton = ( props ) => {
+const Button = ( props ) => {
   const [isOpen, setIsOpen] = useState(false)
 
   const handleSubmit = (event) => {
@@ -38,17 +38,18 @@ const Boton = ( props ) => {
   }
 
   return (
-    <>
-    <button id="btn-create-movie" className="button-create" type="button" onClick={ ()=>setIsOpen(true) }>
-      Crear Nueva Película
-    </button>
+    <section clasName="header-movies">
+      <h2 id="movies-title">Películas</h2>
+      <button id="btn-create-movie" className="button-create" type="button" onClick={ ()=>setIsOpen(true) }>
+        Crear Nueva Película
+      </button>
       <Dialog open={isOpen} onClose={ ()=>setIsOpen(false) }>
           <CreateMovie 
             handleSubmit={ handleSubmit.bind(this) }
           />
       </Dialog>
-    </>
+    </section>
   ) 
 }
 
-export default Boton
+export default Button
