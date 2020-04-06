@@ -27,6 +27,8 @@ const Button = ( props ) => {
       contentType: 'application/json',
       dataType: 'json'
     }).done(requestMovies())
+
+    setIsOpen(false)
   }
 
   const requestMovies = () => {
@@ -38,7 +40,7 @@ const Button = ( props ) => {
   }
 
   return (
-    <section clasName="header-movies">
+    <section clasName="block-create-movies">
       <h2 id="movies-title">Películas</h2>
       <button id="btn-create-movie" className="button-create" type="button" onClick={ ()=>setIsOpen(true) }>
         Crear Nueva Película
