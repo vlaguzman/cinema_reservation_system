@@ -5,14 +5,12 @@
       .title-bar.hide-for-large
         .title-bar-left
           %button.menu-icon{"data-open" => "my-info", :type => "button"}
-          %span.title-bar-title Mike Mikerson
+          %span.title-bar-title Lista Películas
       .callout.primary
         .row.column
-          %h2 Películas
+          = react_component('Button', { }, prerender: true)
       .row.small-up-2.medium-up-3.large-up-4
         - @movies.all.each do |movie|
           .column
             %img.thumbnail{:src => movie.image_url}/
             %h5= movie.name
-      %hr/
-      = react_component('Home', { movies: @movies, url: movie_path }, prerender: true)

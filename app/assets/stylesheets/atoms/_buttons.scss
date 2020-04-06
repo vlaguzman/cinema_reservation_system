@@ -8,9 +8,14 @@ button, input[type="submit"] {
 }
 
 .button-create {
-  background-color: #62E835;
+  border-radius: 50px;
+  background-color: #0087fd;
 }
 
 .button-delete {
   background-color: #FA3F24;
+}
+
+#btn-create-movie{
+  float: right;
 }
