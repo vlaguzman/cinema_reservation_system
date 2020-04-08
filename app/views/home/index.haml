@@ -7,5 +7,6 @@
 .row.small-up-2.medium-up-3.large-up-4
   - @movies.all.each do |movie|
     .column
-      %img.thumbnail{:src => movie.image_url}/
+      = link_to new_movie_reservation_path(movie_id: movie.id) do
+        %img.thumbnail{:src => movie.image_url}/
       %h5= movie.name
