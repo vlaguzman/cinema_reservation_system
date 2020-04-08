@@ -1,15 +1,11 @@
-.off-canvas-wrapper
-  .off-canvas-wrapper-inner{"data-off-canvas-wrapper" => ""}
-    = render '/shared/menu'
-    .off-canvas-content{"data-off-canvas-content" => ""}
-      .title-bar.hide-for-large
-        .title-bar-left
-          %button.menu-icon{"data-open" => "my-info", :type => "button"}
-          %span.title-bar-title Lista Películas
-      .header-movies
-        = react_component('Button', { }, prerender: true)
-      .row.small-up-2.medium-up-3.large-up-4
-        - @movies.all.each do |movie|
-          .column
-            %img.thumbnail{:src => movie.image_url}/
-            %h5= movie.name
+.title-bar.hide-for-large
+  .title-bar-left
+    %button.menu-icon{"data-open" => "my-info", :type => "button"}
+    %span.title-bar-title Lista Películas
+.header-movies
+  = react_component('Button', { }, prerender: true)
+.row.small-up-2.medium-up-3.large-up-4
+  - @movies.all.each do |movie|
+    .column
+      %img.thumbnail{:src => movie.image_url}/
+      %h5= movie.name

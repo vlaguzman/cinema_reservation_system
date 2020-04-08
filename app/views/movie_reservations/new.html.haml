@@ -1,0 +1,5 @@
+%section.container
+  %h1="Reservacion"
+  = form_for :movie_reservation, url: {controller: 'movie_reservations', action: 'create'} do |f|
+    = text_field_tag "cedula"
+    = submit_tag"Create"
