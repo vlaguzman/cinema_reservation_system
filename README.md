@@ -1,16 +1,16 @@
 # App cinema_reservation_system
 
-El siguiente proyecto se crea en función de prueba técnica. Es un monolito y su desarrollo no esta completo, sin embargo se alcanzan a crear algunos modelos y funcionalidades básicas de la aplicación.
+El siguiente proyecto se crea en función de prueba técnica. Es un monolito y su desarrollo no esta completo.
 
 Estado actual:
 - Gestión completa de usuarios y películas.(Listado, creación y eliminación)
 - Presentación de películas. 
+- Creación de reservas.
 
 Los pasos a seguir son:
-- Mover la creación de películas a un modal. 
-- Habilitar la creación de reservas.
 - Validar reglas de negocio. 
-- Presentación de reservas.
+- Presentación de reservas como tabla.
+- Mejoras de interfaz
 
 # Indicaciones de instalación
 La aplicación usa Docker por tanto para iniciar aplicación es necesario seguir los siguientes pasos:
