@@ -4,7 +4,6 @@ class MovieReservationsController < ApplicationController
   end
 
   def create
-    puts params
     MovieReservation.create(movie: Movie.first, user: User.find_by(international_id: params[:cedula]))
   end
 
