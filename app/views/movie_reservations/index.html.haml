@@ -1,0 +1,9 @@
+%section.container
+  %h1="Reservaciones"
+  .row.small-up-2.medium-up-3.large-up-4
+    - @movie_reservations.all.each do |reservation|
+      .column
+        %h5= reservation.movie.name
+        %h5= reservation.user.first_name
+        %h5= reservation.user.international_id
+        %h5= reservation.created_at

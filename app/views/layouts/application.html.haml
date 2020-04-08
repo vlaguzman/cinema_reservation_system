@@ -12,5 +12,8 @@
     = csrf_meta_tag
 
   %body
-
-    = yield
+    .off-canvas-wrapper
+      .off-canvas-wrapper-inner{"data-off-canvas-wrapper" => ""}
+        = render '/shared/menu'
+        .off-canvas-content{"data-off-canvas-content" => ""}
+          = yield
